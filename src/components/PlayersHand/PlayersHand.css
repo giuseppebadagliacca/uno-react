@@ -1,0 +1,19 @@
+#players-hand{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+
+@media (max-width: 880px) {
+  #players-hand{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  #players-hand{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
