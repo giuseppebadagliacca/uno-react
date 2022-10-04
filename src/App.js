@@ -17,7 +17,7 @@ function App() {
   colorRandomizer();
   return (
     <div className="App">
-     <h1>My REAL first react app</h1>
+     <h1>UNO!</h1>
      <PlayersHand colorRandomizer={colorRandomizer} numberRandomizer={numberRandomizer}/>
      <CenterPile colorRandomizer={colorRandomizer} numberRandomizer={numberRandomizer}/>
      <OpponentsHand />
