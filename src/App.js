@@ -14,12 +14,15 @@ function App() {
     return numbers[Math.floor(Math.random()*9)];
   }
 
-  colorRandomizer();
+  const addCardToHand = (card)=> {
+    console.log(card);
+  }
+
   return (
     <div className="App">
      <h1>UNO!</h1>
-     <PlayersHand colorRandomizer={colorRandomizer} numberRandomizer={numberRandomizer}/>
-     <CenterPile colorRandomizer={colorRandomizer} numberRandomizer={numberRandomizer}/>
+     <PlayersHand colorRandomizer={colorRandomizer} numberRandomizer={numberRandomizer} />
+     <CenterPile addCardToHand={addCardToHand}colorRandomizer={colorRandomizer} numberRandomizer={numberRandomizer}/>
      <OpponentsHand />
     </div>
   );

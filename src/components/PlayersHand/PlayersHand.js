@@ -12,8 +12,6 @@ const PlayersHand = (props) =>{
   const [card7, setCard7] = useState({color: props.colorRandomizer(), number: props.numberRandomizer()})
 
 
-
-
   const clickEventHandler = (e) =>{
   console.log(e.target)
   }
@@ -27,7 +25,6 @@ const PlayersHand = (props) =>{
       <UnoCard color={card5.color} number={card5.number}/>
       <UnoCard color={card6.color} number={card6.number}/>
       <UnoCard color={card7.color} number={card7.number}/>
-    
     </div>
   )
 }
